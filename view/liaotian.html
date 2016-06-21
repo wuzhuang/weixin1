@@ -1,0 +1,9 @@
+<div class="collection" id="liaotian" ng-controller="liaotianCtrl">
+	<li ng-repeat="v in ll"
+	ng-class="{me:v.isMe}" 
+	class="collection-item">
+	<img ng-if="v.isMe" src="{{ziji}}" class="content-left-img" alt="">
+	<img ng-if="!v.isMe" src="{{duifang}}" class="content-right-img" alt="">
+	<p><a href="#">{{v.xinxi}}</a></p>
+</li>
+</div>

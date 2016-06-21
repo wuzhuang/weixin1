@@ -1,0 +1,16 @@
+	<div id="contacts" ng-controller="weixinCtrl">
+		<div class="contacts-box">
+			<li class="xiaoxi" ng-repeat="v in lianxiren"  ng-init="show=false" ng-class="{'show-delete':show}" ng-swipe-left="show=true" ng-swipe-right="show=false">
+				<a href="#/liaotian/{{$index}}" class="extra">
+					<strong><img src="{{v.tupian}}" alt=""></strong>
+					<div class="right">
+						<h6>{{v.name}}<i>{{v.time}}</i></h6>
+						<span>{{v.message}}</span>
+
+					</div>
+				</a>
+				<div class="delete" ng-click="deleteLianxiren($index)">删除</div>
+			</li>
+		</div>
+	</div>
+

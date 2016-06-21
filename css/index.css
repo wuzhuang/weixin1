@@ -1,0 +1,833 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "cursive";
+  font-weight: bold;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, dd, dt, dl {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong, h2, h5, h6, i {
+  display: block;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 44.44444px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 52.08333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 57.5px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+.add_hide {
+  width: 3rem;
+  height: 4.75rem;
+  background: #1b1b1b;
+  position: absolute;
+  top: 0.96rem;
+  right: 0;
+  z-index: 9999;
+  box-shadow: 0px 0 3px #1b1b1b;
+}
+
+.add_hide_list {
+  width: 100%;
+  height: 0.95rem;
+  background: #393A3E;
+  border: 0.01rem solid #eee;
+}
+
+.add_hide_img {
+  float: left;
+  width: 1.13rem;
+  height: 100%;
+}
+
+.add_hide_font {
+  float: left;
+  font-size: 0.3rem;
+  color: #fff;
+  line-height: 0.95rem;
+}
+
+.fqql {
+  background: url(../images/fqql.png);
+  background-size: 100%;
+}
+
+.tjpy {
+  background: url(../images/tjpy.png);
+  background-size: 100%;
+}
+
+.sys_hide {
+  background: url(../images/sys_hide.png);
+  background-size: 100%;
+}
+
+.sfk {
+  background: url(../images/sfk.png);
+  background-size: 100%;
+}
+
+.bz {
+  background: url(../images/bz.png);
+  background-size: 100%;
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  bottom: 1.1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: auto;
+  z-index: -1;
+}
+
+#content .collection {
+  margin-top: 1.3621rem;
+  padding: 0 0.3rem;
+}
+
+#content .collection li {
+  height: 1.4rem;
+  width: 100%;
+}
+
+#content p {
+  width: 4rem;
+}
+
+#content img {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+}
+
+/*下导航*/
+#bottom {
+  width: 100%;
+  height: 1.1rem;
+  border-top: 0.01rem solid #E4E4E4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+#bottom ul {
+  height: 100%;
+}
+
+#bottom ul li {
+  text-align: center;
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+#bottom ul li a {
+  display: block;
+  height: 0.8rem;
+  margin: 0.15rem 0.2rem;
+  background-color: #fff;
+  /*span{
+					font-size: 0.24rem;
+					color: #9C9C9C;
+					font-weight: bold;
+				}*/
+}
+
+#bottom ul li a .weixin {
+  height: 0.46rem;
+  margin: 0 0.43rem;
+  background: url(../images/weixin.png) center center no-repeat;
+  background-size: 0.6rem;
+}
+
+#bottom ul li a .tongxunlu {
+  height: 0.46rem;
+  margin: 0 0.43rem;
+  background: url(../images/tongxunlu.png) center center no-repeat;
+  background-size: 0.6rem;
+}
+
+#bottom ul li a .tongxunlu1.active {
+  height: 0.46rem;
+  margin: 0 0.43rem;
+  background: url(../images/tongxunlu1.png) center center no-repeat;
+  background-size: 0.6rem;
+}
+
+#bottom ul li a .tongxunlu1.active span {
+  color: green;
+}
+
+#bottom ul li a .faxian {
+  height: 0.46rem;
+  margin: 0.02rem 0.43rem 0 0.43rem;
+  background: url(../images/faxian.png) center center no-repeat;
+  background-size: 0.459rem;
+}
+
+#bottom ul li a .wo {
+  height: 0.46rem;
+  margin: 0 0.43rem;
+  background: url(../images/wo.png) center center no-repeat;
+  background-size: 0.5rem;
+}
+
+/*上一*/
+#top {
+  width: 100%;
+  height: 0.52rem;
+  background-color: #3F2747;
+  line-height: 0.52rem;
+  position: fixed;
+  top: 0;
+  padding: 0 0.15rem;
+}
+
+#top span {
+  font-weight: bold;
+  font-size: 0.28rem;
+  color: #FBFBFA;
+}
+
+#top strong {
+  color: #FBFBFA;
+  float: right;
+}
+
+#top .dianliang {
+  width: 0.55rem;
+  height: 100%;
+  background: url(../images/dianliang.svg);
+  background-size: 0.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#top .xinhao {
+  width: 0.51rem;
+  height: 100%;
+  background: url(../images/xinhao.svg);
+  background-size: 0.4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#top .wuxian {
+  width: 0.51rem;
+  height: 100%;
+  background: url(../images/wuxian.svg);
+  background-size: 0.4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*上二*/
+#header {
+  width: 100%;
+  height: 0.97rem;
+  background-color: #393A3E;
+  position: fixed;
+  top: 0.52rem;
+  padding: 0 0.3rem;
+}
+
+#header h2 {
+  display: block;
+  color: #FBFBFA;
+  width: 3.2rem;
+  float: left;
+  font-size: 0.36rem;
+  line-height: 0.97rem;
+  font-weight: bold;
+}
+
+#header .add, #header .search {
+  float: right;
+  margin: 0.3rem 0;
+  display: block;
+  width: 0.41rem;
+  height: 0.41rem;
+}
+
+#header .add {
+  background: url(../images/add.svg);
+  background-size: 0.41rem;
+  background-repeat: no-repeat;
+}
+
+#header .search {
+  margin-right: 0.84rem;
+  background: url(../images/search.svg);
+  background-size: 0.41rem;
+  background-repeat: no-repeat;
+}
+
+/*微信*/
+#contacts {
+  height: auto;
+  width: 100%;
+  margin-top: 1.49rem;
+}
+
+#contacts li {
+  position: relative;
+  height: 1.25rem;
+  padding: 0.12rem 0.3rem 0.18rem 0.3rem;
+  background-color: #fff;
+  border-bottom: 0.01rem solid #f7f7f7;
+}
+
+#contacts li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#contacts li a strong {
+  width: 0.97rem;
+  height: 0.97rem;
+  float: left;
+  margin: 0.125rem 0.28rem 0 0.1rem;
+  background-color: blue;
+}
+
+#contacts li a strong img {
+  width: 0.97rem;
+  height: 0.97rem;
+}
+
+#contacts li a .right {
+  width: 5.55rem;
+  float: left;
+  margin-top: 0.25rem;
+  margin-bottom: 0.15rem;
+}
+
+#contacts li a .right h6 {
+  font-size: 0.3rem;
+  margin-bottom: 0.16rem;
+  color: #3d3d3d;
+}
+
+#contacts li a .right h6 i {
+  display: inline-block;
+  float: right;
+  font-size: 0.18rem;
+}
+
+#contacts li a .right span {
+  color: #ABABAB;
+  height: 0.254rem;
+}
+
+.extra {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+  background: #fff;
+  transition: all .3s ease;
+}
+
+#contacts .show-delete .extra {
+  transform: translateX(-1rem);
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+  bottom: 0.15rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.12rem;
+  background: steelblue;
+  font-size: 0.24rem;
+  color: #000;
+  text-align: center;
+  line-height: 1rem;
+  z-index: 0;
+}
+
+.xiaoxi {
+  position: relative;
+  width: 100%;
+  height: 1.25rem;
+  background: #fff;
+  margin-top: 0.02rem;
+}
+
+.contacts {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.contacts-box {
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  width: 100%;
+  height: auto;
+  background: #EBEBEB;
+}
+
+/*我*/
+#contain {
+  height: 10.2rem;
+  width: 100%;
+  margin-top: 1.49rem;
+  background-color: #EBEBEB;
+}
+
+#contain li.shoucang {
+  border-bottom: 0.01rem solid #EBEBEB;
+}
+
+#contain li {
+  margin: 0 0.28rem;
+  padding: 0.34rem 0 0.25rem 0;
+}
+
+#contain h2 {
+  line-height: 0.6rem;
+  height: 0.4rem;
+  font-size: 0.3rem;
+}
+
+#contain strong {
+  width: 0.5rem;
+  height: 0.5rem;
+  float: left;
+  background-color: red;
+  margin-left: 0.14rem;
+  margin-right: 0.4rem;
+}
+
+#contain .xiangce1 {
+  background: url(../images/xiangce.svg) center center no-repeat;
+  background-size: 0.5rem;
+}
+
+#contain .shoucang1 {
+  background: url(../images/shoucang.svg) center center no-repeat;
+  background-size: 0.5rem;
+}
+
+#contain .qianbao1 {
+  background: url(../images/qianbao.svg) center center no-repeat;
+  background-size: 0.5rem;
+}
+
+#contain .kabao1 {
+  background: url(../images/kabao.svg) center center no-repeat;
+  background-size: 0.5rem;
+}
+
+#contain .biaoqing1 {
+  background: url(../images/biaoqing.svg) center center no-repeat;
+  background-size: 0.5rem;
+}
+
+#contain .set1 {
+  background: url(../images/shezhi.svg) center center no-repeat;
+  background-size: 0.5rem;
+}
+
+#contain .geren {
+  width: 100%;
+  height: 1.62rem;
+  background-color: #fff;
+  position: relative;
+  top: 0.38rem;
+  margin: 0.38rem 0 0.38rem 0;
+}
+
+#contain .geren strong {
+  width: 1.29rem;
+  height: 1.29rem;
+  margin: 0.2rem 0.34rem 0.2rem 0.3rem;
+  background-color: #000;
+  margin-right: 0.34rem;
+  background: url(../images/18.jpg) center center no-repeat;
+  background-size: 2rem;
+}
+
+#contain .geren .ewm {
+  background: url(../images/ewm.png) center center no-repeat;
+  background-size: 0.4rem;
+}
+
+#contain .geren .gr-info {
+  float: left;
+  width: 4rem;
+  height: 1.69rem;
+}
+
+#contain .geren .gr-info h2 {
+  display: block;
+  font-size: 0.3rem;
+  text-indent: 3px;
+  padding-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+#contain .geren .gr-info h5 {
+  display: block;
+  font-size: 0.28rem;
+  padding-bottom: 0.43rem;
+}
+
+#contain .geren i {
+  width: 0.38rem;
+  height: 0.38rem;
+  background-color: #000;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.1724rem;
+}
+
+#contain .gr-sec {
+  height: 1.94rem;
+  background-color: #fff;
+  margin-top: 0.6986rem;
+}
+
+#contain .gr-sec li {
+  height: 0.97rem;
+}
+
+#contain .gr-money {
+  height: 1.94rem;
+  background-color: #fff;
+  margin-top: 0.3428rem;
+}
+
+#contain .gr-money li {
+  height: 0.97rem;
+}
+
+#contain .biaoqing {
+  height: 0.97rem;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0.3428rem;
+  padding: 0.2586rem 0.2586rem;
+}
+
+#contain .set {
+  height: 0.97rem;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 0.3428rem;
+  padding: 0.2586rem 0.2586rem;
+}
+
+/*通讯录*/
+#tongxunlu {
+  height: auto;
+  width: 100%;
+  margin-top: 1.49rem;
+  background-color: #EBEBEB;
+}
+
+#tongxunlu .guli {
+  margin: 0 0.48rem 0 0.25rem;
+}
+
+#tongxunlu .pytuijie {
+  padding: 0.1rem 0.25rem;
+  height: 0.44rem;
+  line-height: 0.24rem;
+}
+
+#tongxunlu .pytuijie a {
+  color: #8E8E8E;
+  font-size: 0.24rem;
+}
+
+#tongxunlu .tongshang {
+  height: 4.18rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+#tongxunlu .tongshang strong {
+  width: 0.74rem;
+  height: 0.74rem;
+  background-color: orange;
+  margin-right: 0.32rem;
+  margin-top: 0.16rem;
+  float: left;
+}
+
+#tongxunlu .tongshang li {
+  height: 1.06rem;
+  line-height: 1.06rem;
+  border-bottom: 0.01rem solid #ECECEC;
+}
+
+#tongxunlu .tongshang li .newF {
+  background: url(../images/xinpengyou.png) center center no-repeat;
+  background-size: 1rem;
+}
+
+#tongxunlu .tongshang li .qunliao {
+  background: url(../images/qunliao.png) center center no-repeat;
+  background-size: 1rem;
+}
+
+#tongxunlu .tongshang li .biaoqian {
+  background: url(../images/biaoqian.png) center center no-repeat;
+  background-size: 1rem;
+}
+
+#tongxunlu .tongshang li .gongzhaohao {
+  background: url(../images/gongzhaohao.png) center center no-repeat;
+  background-size: 1rem;
+}
+
+#tongxunlu .tongshang li a {
+  color: #313131;
+}
+
+#tongxunlu .contactList {
+  height: auto;
+  background-color: #fff;
+}
+
+#tongxunlu .contactList .liebiao {
+  height: 1.06rem;
+  line-height: 0.7rem;
+  margin: 0 0.48rem 0 0.25rem;
+  padding: 0.18rem 0;
+  border-bottom: 0.01rem solid #ECECEC;
+}
+
+#tongxunlu .contactList .liebiao a {
+  color: #515151;
+}
+
+#tongxunlu .contactList .liebiao strong {
+  width: 0.72rem;
+  height: 0.72rem;
+  background-color: orange;
+  margin-right: 0.25rem;
+  float: left;
+}
+
+#tongxunlu .contactList .liebiao strong img {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+
+#tongxunlu .contactList .zimu {
+  background-color: #EBEBEB;
+}
+
+/*字母列表*/
+.zimu-list {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  text-align: center;
+  background-color: silver;
+  width: 0.5rem;
+}
+
+.zimu-list #liwai {
+  margin: 0;
+}
+
+/*发现*/
+#friend {
+  height: 10.18rem;
+  width: 100%;
+  margin-top: 1.49rem;
+  background-color: #EBEBEB;
+}
+
+#friend .shoucang {
+  border-bottom: none;
+}
+
+#friend .pyq {
+  background: url(../images/pyq.png) center center no-repeat;
+  background-size: 0.4rem;
+}
+
+#friend .sys {
+  background: url(../images/sys.png) center center no-repeat;
+  background-size: 0.4rem;
+}
+
+#friend .yyy {
+  background: url(../images/yyy.png) center center no-repeat;
+  background-size: 0.4rem;
+}
+
+#friend .fjdr {
+  background: url(../images/fjdr.png) center center no-repeat;
+  background-size: 0.4rem;
+}
+
+#friend .plp {
+  background: url(../images/plp.png) center center no-repeat;
+  background-size: 0.4rem;
+}
+
+#friend .gw {
+  background: url(../images/gw.png) center center no-repeat;
+  background-size: 0.4rem;
+}
+
+#friend .yx {
+  background: url(../images/yx.png) center center no-repeat;
+  background-size: 0.4rem;
+}
+
+#friend li {
+  margin: 0 0.29rem;
+  padding: 0.24rem 0;
+  height: 0.97rem;
+  border-bottom: 0.01rem solid #EBEBEB;
+}
+
+#friend h2 {
+  width: 3rem;
+  height: 0.3rem;
+  margin-top: 0.1rem;
+  font-size: 0.3rem;
+}
+
+#friend strong {
+  width: 0.47rem;
+  height: 0.47rem;
+  float: left;
+  background-color: red;
+  margin: 0 0.4rem 0 0.16rem;
+}
+
+#friend .gr-sec1 {
+  background-color: #fff;
+  margin-top: 0.68rem;
+}
+
+#friend .gr-sec2 {
+  background-color: #fff;
+  margin-top: 0.4rem;
+}
+
+#friend .gr-money1 {
+  background-color: #fff;
+  margin-top: 0.4rem;
+}
+
+#friend .pengyouquan {
+  height: 0.97rem;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0.36rem;
+  padding: 0.28rem 0.36rem 0.28rem 0.44rem;
+}
+
+#friend .pengyouquan strong {
+  float: right;
+  margin-right: 0;
+  margin-top: -0.4138rem;
+}
+
+/*聊天页面*/
+#liaotian {
+  margin-top: 1.49rem;
+}
+
+#liaotian .collection-item {
+  width: 100%;
+  height: 1.10rem;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+#liaotian .collection-item p {
+  position: absolute;
+  left: 2.55rem;
+  top: 0.35rem;
+  margin: 0;
+  padding: 0;
+  width: 3rem;
+  height: 100%;
+  font-size: 0.3rem;
+}
+
+#liaotian .collection-item p a {
+  display: block;
+  width: auto;
+  color: #000;
+  height: 0.44rem;
+  background-color: green;
+  text-align: right;
+}
+
+#liaotian .collection-item.me p {
+  position: absolute;
+  left: 1.1rem;
+}
+
+#liaotian .collection-item.me p a {
+  text-align: left;
+}
+
+.content-left-img {
+  position: absolute;
+  left: -0.15rem;
+  top: 0.15rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.content-right-img {
+  position: absolute;
+  right: -0.15rem;
+  top: 0.15rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}

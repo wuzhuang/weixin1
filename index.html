@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en" ng-app="weixin">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<!-- 优先使用 IE 最新版本和 Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 360 浏览器就会在读取到这个标签后，立即切换对应的极速核 -->
+    <meta name="renderer" content="webkit">
+    <!-- 禁止百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>微信客户端</title>
+	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+	<script src=".\bower_components\angular\angular.js"></script>
+	<script src=".\bower_components\angular-animate\angular-animate.js"></script>
+	<script src=".\bower_components\angular-route\angular-route.js"></script>
+	<script src=".\bower_components\angular-touch/angular-touch.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+	<script src="./js/index.js"></script>
+	<link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body ng-controller="mainCtrl">
+	
+    <uq-top></uq-top>
+	<uq-title></uq-title>
+
+	<div id="content">
+	    <ng-view></ng-view>
+	</div>
+
+	<uq-tab-bar></uq-tab-bar>
+
+
+
+	<script src="./bower_components/jquery/dist/jquery.js"></script>
+	<script src="./bower_components/Swiper/dist/js/swiper.min.js"></script>
+	<script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

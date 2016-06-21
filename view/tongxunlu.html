@@ -1,0 +1,35 @@
+<div id="tongxunlu" ng-controller="tongxunluCtrl">
+	<div class="pytuijie">
+		<a href="#">朋友推荐</a>
+	</div>
+	<ul class="tongshang">
+		<li class="guli">
+			<strong class="newF"></strong>
+			<a href="#">新朋友</a>
+		</li>
+		<li class="guli">
+			<strong class="qunliao"></strong>
+			<a href="#">群聊</a>
+		</li>
+		<li class="guli">
+			<strong class="biaoqian"></strong>
+			<a href="#">标签</a>
+		</li>
+		<li class="guli">
+			<strong class="gongzhonghao"></strong>
+			<a href="#">公众号</a>
+		</li>
+	</ul>
+	<ul class="contactList" ng-repeat="v in lists">
+		<li class="zimu guli" data-key="{{v.key}}">
+			<span>{{v.key}}</span>
+		</li>
+		<li class="liebiao guli" ng-repeat="x in v.people">
+			<strong>
+				<img src="{{x.tupian}}" alt="">
+			</strong>
+			<a href="#" class="newF">{{x.name}}</a>
+		</li>
+	</ul>
+	<uq-list></uq-list>
+</div>
